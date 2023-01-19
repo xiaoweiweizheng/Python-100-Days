@@ -10,8 +10,12 @@ class Test:
 
 def main():
     test = Test('hello')
-    test._Test__bar()
-    print(test._Test__foo)
+    # can access
+    # test._Test__bar()
+    # print(test._Test__foo)
+    # cannot access
+    test.__bar()
+    print(test.__foo)
 
 
 if __name__ == "__main__":

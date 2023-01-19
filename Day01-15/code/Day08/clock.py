@@ -13,7 +13,7 @@ import os
 class Clock(object):
 
     # Python中的函数是没有重载的概念的
-    # 因为Python中函数的参数没有类型而且支持缺省参数和可变参数
+    # 因为Python中函数的参数没有类型而且支持缺省参数(default)和可变参数
     # 用关键字参数让构造器可以传入任意多个参数来实现其他语言中的构造器重载
     def __init__(self, **kw):
         if 'hour' in kw and 'minute' in kw and 'second' in kw:
