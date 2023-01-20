@@ -27,6 +27,9 @@ def main():
     pets = [Dog('旺财'), Cat('凯蒂'), Dog('大黄')]
     for pet in pets:
         pet.make_voice()
+    
+    # cannot instantiate abstract class
+    # p = Pet('boy')
 
 
 if __name__ == '__main__':
