@@ -30,15 +30,15 @@ class Teacher(object):
         return self.__title
 
 
-filename = 'teacher.csv'
-teachers = [Teacher('骆昊', 38, '叫兽'), Teacher('狄仁杰', 25, '砖家')]
+# filename = 'teacher.csv'
+# teachers = [Teacher('骆昊', 38, '叫兽'), Teacher('狄仁杰', 25, '砖家')]
 
-try:
-    with open(filename, 'w') as f:
-        writer = csv.writer(f)
-        for teacher in teachers:
-            writer.writerow([teacher.name, teacher.age, teacher.title])
-except BaseException as e:
-    print('无法写入文件:', filename)
-else:
-    print('保存数据完成!')
+# try:
+#     with open(filename, 'w') as f:
+#         writer = csv.writer(f)
+#         for teacher in teachers:
+#             writer.writerow([teacher.name, teacher.age, teacher.title])
+# except BaseException as e:
+#     print('无法写入文件:', filename)
+# else:
+#     print('保存数据完成!')
